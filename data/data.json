@@ -1,0 +1,47 @@
+{
+	"code":0,
+	"count":5,
+	"data":[{
+		"id":38459,
+		"contract_id":"focus",
+		"pos_num":0,
+		"name":"不得了哦~~",
+		"pic":"http://i0.hdslb.com/bfs/archive/6617328743acfd8f5d510055f1cd8b8c2a521c6e.jpg",
+		"litpic":"","url":"http://www.bilibili.com/blackboard/activity-ByDjbdLig.html",
+		"style":0,
+		"agency":"",
+		"label":"",
+		"intro":"",
+		"area":0,
+		"is_ad_loc":false,
+		"ad_cb":"",
+		"title":""
+		},{
+		"id":0,
+		"contract_id":"",
+		"pos_num":2,
+		"name":"围观UP主，GET神技能",
+		"pic":"https://i0.hdslb.com/bfs/archive/04d0768e3ee54a5e66c2665bbeaac352b8f743bc.jpg",
+		"litpic":"","url":"http://e.cn.miaozhen.com/r/k=2037918\u0026p=74xG7\u0026dx=__IPDX__\u0026rt=2\u0026ns=__IP__\u0026ni=__IESID__\u0026v=__LOC__\u0026xa=__ADPLATFORM__\u0026mo=__OS__\u0026m0=__OPENUDID__\u0026m0a=__DUID__\u0026m1=__ANDROIDID1__\u0026m1a=__ANDROIDID__\u0026m2=__IMEI__\u0026m4=__AAID__\u0026m5=__IDFA__\u0026m6=__MAC1__\u0026m6a=__MAC__\u0026vo=33904ba19\u0026vr=2\u0026o=http%3A%2F%2Fwww.bilibili.com%2Fblackboard%2Factivity-hujiang0219.html",
+		"style":0,
+		"is_ad":true,
+		"agency":"",
+		"label":"",
+		"intro":"",
+		"request_id":"1489918128382q172a18a61a8q162",
+		"creative_id":8737,
+		"src_id":25,
+		"area":1,
+		"is_ad_loc":true,
+		"ad_cb":"CKFEEOoXGIQbIAAoADAAOBlCHTE0ODk5MTgxMjgzODJxMTcyYTE4YTYxYThxMTYySP7hqbCuK1IJ5oiQ6YO95biCWgnlm5vlt53nnIFiBuS4reWbvWgBcAB4AIABAIgB0AuSAQ8xODIuMTUwLjE0My4xNDI=",
+		"title":"围观UP主，GET神技能"
+		},{
+		"id":38382,
+		"contract_id":"focus",
+		"pos_num":3,
+		"name":"瞄准你了哦！",
+		"pic":"http://i0.hdslb.com/bfs/archive/7f63afd9317792eecb0b85ee0e9f337d413cd966.jpg","litpic":"","url":"http://www.bilibili.com/blackboard/activity-ryq25xNix.html","style":0,"agency":"","label":"","intro":"","request_id":"1489918128382q172a18a61a8q162","src_id":26,"area":1,"is_ad_loc":true,"ad_cb":"","title":""},{"id":38341,"contract_id":"focus","pos_num":0,"name":"周末放映室爱你哦~❤","pic":"http://i0.hdslb.com/bfs/archive/3c157a3dea8b39506be995f2f0063562ce54df38.jpg","litpic":"","url":"http://www.bilibili.com/blackboard/activity-ByUUznDox.html","style":0,"agency":"","label":"","intro":"","area":0,"is_ad_loc":false,"ad_cb":"","title":""},{"id":38245,"contract_id":"focus","pos_num":0,"name":"这不是真的！","pic":"http://i0.hdslb.com/bfs/archive/003dce2daaa9650fba4133e922141edc6afd9fa8.jpg","litpic":"","url":"http://www.bilibili.com/blackboard/activity-rktZgi8ox.html","style":0,"agency":"","label":"","intro":"","area":0,"is_ad_loc":false,"ad_cb":"","title":""
+	
+	}],
+	"message":"0"
+}

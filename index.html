@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			a{display:inline-block;}
+			ul{list-style: none;width:100%;justify-content:space-between;position:relative;overflow:hidden;display:flex;flex-flow:wrap;}
+			ul li{width:33.3%;padding:10px;box-sizing:border-box;}
+			img{width:100%;}
+			.empty{height:300px;display:table;margin:0 auto;}
+			.empty h2{vertical-align:middle;display:table-cell;}
+			@media only screen and (max-width:680px){
+				ul li{width:50%;}
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script type="text/javascript" src="js/lanLoad.min.js" ></script>
+	</head>
+	
+	<body>
+		<div class="empty"><h2>此处为空白区域(loading 需滚动条稍微滚动一下&#8764;&nbsp;&or;&nbsp;&#8764;)</h2></div>
+		<div id="upDate">
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+			<ul>
+				<li class="loading"></li>
+			</ul>
+		</div>
+		
+		<script>
+			//  data 里面的数据是从 "http://api.bilibili.com/x/web-show/res/loc?jsonp=jsonp&pf=0&id=23"获取出来的
+			//  若用http...id=23  则 dataType:jsonp  
+			//  因为 https  并不能加载 http里面的内容 会报错
+			$.ajax({
+				url:'data/data.json',
+				type:"get",
+				dataType:"json",
+				timeout:3000,
+				async:true,
+				beforeSend:function(){
+					$("#upDate .loading").html("<img src='http://sunyang.duapp.com/img/loading.gif'/>");
+				},
+				success:function(data){
+					imgLoad(data)	
+				},
+				complete:function(XMLHttpRequest,textStatus){  
+		            if(textStatus=='timeout'){  
+		                var xmlhttp = window.XMLHttpRequest ? new window.XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHttp");  
+		                xmlhttp.abort();   
+		                $("#upDate").html("网络超时！");
+		    　　　　	}    
+		        },
+		        error:function(XMLHttpRequest, textStatus, errorThrown){
+		            alert ("XMLHttpRequest.status="+XMLHttpRequest.status+"\ntextStatus="+textStatus+"\nerrorThrown=" + errorThrown);
+				}        
+			})
+			function imgLoad(data){
+				var arr = data.data;
+				var html = "";
+				for (var i=0;i<arr.length;i++) {
+					html += '<li>'+
+									'<a href='+arr[i].url+'>'+
+										'<img data-src='+arr[i].pic+' src="img/loading.jpg" title='+arr[i].name+' alt='+arr[i].name+'>'+
+									'</a>'+
+								'</li>'	;
+//					$("#upDate .loading").remove();
+				}
+				$("#upDate ul").html(html)
+			}
+	//   懒加载  		
+			lanLoad("#upDate",500)
+
+		</script>
+	
+	</body>
+</html>
