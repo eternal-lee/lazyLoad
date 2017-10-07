@@ -22,6 +22,9 @@ function lanLoad(id,time){
 					checkShow();
 				}, time);
 			})
+			$(window).on("load",fuction(){
+			     checkShow();
+			})	
 			checkShow();
 		}
 		
